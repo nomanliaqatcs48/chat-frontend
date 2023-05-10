@@ -11,8 +11,8 @@ import Plateforms from "../components/Plateforms/Plateforms";
 import SuperEasy from "../components/SuperEasy/SuperEasy";
 import GetStarted from "../components/common/GetStarted";
 import Feedback from "../components/FeedBack/FeedBack";
-// import FrequentQuestions from "../components/common/FrequentQuestions";
-// import FreeTrial from "../components/FreeTrial/FreeTrial";
+import FrequentQuestions from "../components/common/FrequentQuestions";
+import FreeTrial from "../components/FreeTrial/FreeTrial";
 import "../../src/styles/common/globalStyles.module.scss";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Seo from "../components/common/SEO";
@@ -55,8 +55,8 @@ const IndexPage = ({ data }) => {
             <BlogHead blog={data?.allStrapiBlog?.nodes} />
           </Box>
         </Container>
-        {/* <FrequentQuestions />
-        <FreeTrial /> */}
+        <FrequentQuestions />
+        <FreeTrial />
       </Layout>
       <script type="application/ld+json">
         {`
